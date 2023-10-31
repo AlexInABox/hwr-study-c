@@ -1,0 +1,23 @@
+# ninja log v5
+114	298	7204548800677915	hwr_hello_world.exe	fe826b5907cebfa9
+2	113	7204548799141743	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+1	91	7204481535126582	CMakeFiles/hwr_hello_world.dir/guessnumber.c.obj	8c572170121dff9
+1	140	7204550130806741	build.ninja	cf725e3b7a676c36
+2	108	7204550565430632	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+108	343	7204550567521973	hwr_hello_world.exe	fe826b5907cebfa9
+2	107	7204551257751243	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+108	265	7204551259076751	hwr_hello_world.exe	fe826b5907cebfa9
+2	109	7204551457303870	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+112	269	7204551458650014	hwr_hello_world.exe	fe826b5907cebfa9
+3	122	7204551800158941	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+123	291	7204551801595098	hwr_hello_world.exe	fe826b5907cebfa9
+2	112	7204551929251996	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+113	299	7204551930873536	hwr_hello_world.exe	fe826b5907cebfa9
+2	115	7204556049352046	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+116	292	7204556050876763	hwr_hello_world.exe	fe826b5907cebfa9
+2	105	7204556227223463	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+106	263	7204556228538447	hwr_hello_world.exe	fe826b5907cebfa9
+1	108	7204557278183660	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+109	266	7204557279518344	hwr_hello_world.exe	fe826b5907cebfa9
+2	144	7204559860257395	CMakeFiles/hwr_hello_world.dir/main.c.obj	a9bf7627a95acf9e
+146	364	7204559862202044	hwr_hello_world.exe	fe826b5907cebfa9

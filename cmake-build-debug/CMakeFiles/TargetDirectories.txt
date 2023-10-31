@@ -1,0 +1,4 @@
+C:/Users/s_betke23/CLionProjects/hwr_hello_world/cmake-build-debug/CMakeFiles/hwr_hello_world.dir
+C:/Users/s_betke23/CLionProjects/hwr_hello_world/cmake-build-debug/CMakeFiles/second.dir
+C:/Users/s_betke23/CLionProjects/hwr_hello_world/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/s_betke23/CLionProjects/hwr_hello_world/cmake-build-debug/CMakeFiles/rebuild_cache.dir
