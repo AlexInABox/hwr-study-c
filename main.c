@@ -12,6 +12,7 @@ int isThisAVowel();
 int whichQuadrant();
 int isThisAPalindrom();
 
+
 int main() {
     calcQuadToTwenty();
     guessRandomNumber();
