@@ -1,17 +1,25 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h> //Device time
+#include <stdio.h>
 #include <string.h>
 
 
+int calcQuadToTwenty();
+int guessRandomNumber();
+int whatMonth();
+int isThisALeapYear();
+int isThisAVowel();
+int whichQuadrant();
+int isThisAPalindrom();
+
 int main() {
-    //calcQuadToTwenty();
-    //guessRandomNumber();
-    //whatMonth();
-    //isThisALeapYear();
-    //isThisAVowel();
-    //whichQuadrant();
-    //isThisAPalindrom();
+    calcQuadToTwenty();
+    guessRandomNumber();
+    whatMonth();
+    isThisALeapYear();
+    isThisAVowel();
+    whichQuadrant();
+    isThisAPalindrom();
 
     return 0;
 }
@@ -84,7 +92,8 @@ int guessRandomNumber(){
 
     } while (!guessed);
 
-    printf("You have successfully guessed the random number in the following amount of tries: %d", guessAmount );
+    printf("You have successfully guessed the random number in the following amount of tries: %d", guessAmount);
+    printf("\n\n");
 
 }
 
@@ -97,43 +106,43 @@ int whatMonth(){
 
     switch(inputMonthIndex) {
         case (1):
-            printf("January!");
+            printf("January!\n\n");
             return 0;
         case (2):
-            printf("February!");
+            printf("February!\n\n");
             return 0;
         case (3):
-            printf("March!");
+            printf("March!\n\n");
             return 0;
         case (4):
-            printf("April!");
+            printf("April!\n\n");
             return 0;
         case (5):
-            printf("May!");
+            printf("May!\n\n");
             return 0;
         case (6):
-            printf("June!");
+            printf("June!\n\n");
             return 0;
         case (7):
-            printf("July!");
+            printf("July!\n\n");
             return 0;
         case (8):
-            printf("August!");
+            printf("August!\n\n");
             return 0;
         case (9):
-            printf("September!");
+            printf("September!\n\n");
             return 0;
         case (10):
-            printf("October!");
+            printf("October!\n\n");
             return 0;
         case (11):
-            printf("November!");
+            printf("November!\n\n");
             return 0;
         case (12):
-            printf("December!");
+            printf("December!\n\n");
             return 0;
         default:
-            printf("what is bro bluffin about???");
+            printf("what is bro bluffin about???\n\n");
     }
 }
 
@@ -145,81 +154,96 @@ int isThisALeapYear(){
 
     if(!(yearOfChoice % 4)){
         if (yearOfChoice % 1000){
-            printf("Yeah dude that's a leap year!!");
+            printf("Yeah dude that's a leap year!!\n\n");
             return 0;
         } else(!(yearOfChoice % 400)); {
-            printf("Yeah dude that's a leap year!!");
+            printf("Yeah dude that's a leap year!!\n\n");
             return 0;
         }
     }
-    printf("No dude that's obviously not a leap year...");
+    printf("No dude that's obviously not a leap year...\n\n");
+    return 0;
 }
 
 int isThisAVowel(){
 
     char listOfVowels[5] = {'a', 'e', 'i', 'o', 'u'};
     char charToCheck;
-    int isVowel = 0;
 
-    printf("Give me a character and I'll tell you if it's a vowel!");
-    scanf("%c", &charToCheck);
+    printf("Give me a character and I'll tell you if it's a vowel!\n");
+    scanf(" %c", &charToCheck);
 
     for(int i = 0; i < sizeof(listOfVowels); i++){
         if (listOfVowels[i] == charToCheck){
-            printf("Yippie! You character is in fact a vowel!! Nice <3");
+            printf("Yippie! You character is in fact a vowel!! Nice <3\n\n");
             return 0;
         }
     }
 
-    printf(":( Seems like your character is not a vowel... Sorri~");
+    printf(":( Seems like your character is not a vowel... Sorri~\n\n");
 }
 
 int whichQuadrant(){
     int x, y;
 
     printf("Give me some coordinates an I will tell you in which quadrant they lie!\n");
-    printf("x-coordinate pwease <3");
+    printf("x-coordinate pwease <3\n");
     scanf("%d", &x);
-    printf("\ny-coordinate pwease <3");
+    printf("\ny-coordinate pwease <3\n");
     scanf("%d", &y);
 
     if (x == 0 && y == 0) {
-        printf("You trickster hehe. The coordiantes you provided are [0, 0] and are in neither of the four quadrants >.<");
+        printf("You trickster hehe. The coordiantes you provided are [0, 0] and are in neither of the four quadrants >.<\n\n");
         return 0;
     }
 
     if (x > 0){
         if (y > 0){
-            printf("Your coordinates are lying in the first quadrant!");
+            printf("Your coordinates are lying in the first quadrant!\n\n");
             return 0;
         } else if (y < 0){
-            printf("Your coordinates are lying in the fourth quadrant!");
+            printf("Your coordinates are lying in the fourth quadrant!\n\n");
             return 0;
         }
     } else if (x < 0){
         //x < 0
         if (y > 0){
-            printf("Your coordinates are lying in the second quadrant!");
+            printf("Your coordinates are lying in the second quadrant!\n\n");
             return 0;
         } else if (y < 0){
-            printf("Your coordinates are lying in the third quadrant!");
+            printf("Your coordinates are lying in the third quadrant!\n\n");
             return 0;
         }
     }
-    printf("You trickster hehe. The coordinates you provided are lying in neither of the four quadrants >.<");
+    printf("You trickster hehe. The coordinates you provided are lying in neither of the four quadrants >.<\n\n");
+}
+
+char *strrev(char *str) //needs to be implemented manually on unix
+{
+    char *p1, *p2;
+
+    if (! str || ! *str)
+        return str;
+    for (p1 = str, p2 = str + strlen(str) - 1; p2 > p1; ++p1, --p2)
+    {
+        *p1 ^= *p2;
+        *p2 ^= *p1;
+        *p1 ^= *p2;
+    }
+    return str;
 }
 
 int isThisAPalindrom(){
     char str[40]; // declare the size of character string
     char strCopy[40];
-    printf (" \n Enter a string to be checked: \n");
+    printf ("Welcome to: \"Is this word a palindrome?!\". Please enter your string to start: \n");
     scanf ("%s", str);
 
     strcpy(strCopy, str); //copy string to backup so strrev doesnt overwrite our only source
 
     if (!(strcmp(strCopy, strrev(str)))){
-        printf("Yippie that word is a palindrome!");
+        printf("\nYippie that word is a palindrome!\n\n");
     } else{
-        printf("\nNu-Uh! Not a palindrome!");
+        printf("\nNu-Uh! Not a palindrome!\n\n");
     }
 }
