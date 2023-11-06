@@ -21,7 +21,7 @@ int main() {
     //isThisAVowel();
     //whichQuadrant();
     //isThisAPalindrom();
-    drawGeo();
+    //drawGeo();
 
     return 0;
 }
@@ -79,7 +79,7 @@ int guessRandomNumber(){
 
     do {
         guessAmount++;
-        printf("Type a(nother) number: \n");
+        printf("Type a(nother) number between 0 - 15: \n");
         scanf("%d", &guessedNumber);
 
         if (guessedNumber == randomNumber){
@@ -250,7 +250,7 @@ int isThisAPalindrom(){
     }
 }
 
-int drawGeo(){
+int drawGeo() {
     int shapeType;
     int size;
 
@@ -269,14 +269,14 @@ int drawGeo(){
 
 
     if (shapeType == 1) {
-        for (int i = 1; i <= size; i++){
+        for (int i = 1; i <= size; i++) {
             for (int j = 0; j < i; ++j) {
                 printf("* ");
             }
             printf("\n");
         }
         return 0;
-    } else if (shapeType == 2){
+    } else if (shapeType == 2) {
         for (int i = 0; i < size; ++i) {
             for (int j = 0; j < size; ++j) {
                 printf("* ");
@@ -285,5 +285,6 @@ int drawGeo(){
         }
         return 0;
     }
-    printf("You have provided me with a shape that isn't supported yet! Please restart and pick either 1 (triangle) or 2 (square)! O.o\n");
+    printf("You have provided me with a shape that isn't supported yet! (kys) Please restart and pick either 1 (triangle) or 2 (square)! O.o\n");
+    return 0;
 }
