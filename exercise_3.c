@@ -208,7 +208,6 @@ int userManagement(){
     int userExists = 0;
     int userIndex;
 
-
     struct User userAccounts[5] = {
             {"Markus", "markusStark"},
             {"Helene", "hertha123"},
@@ -252,7 +251,6 @@ int userManagement(){
         else{
             printf("Nope. Seems like you dont know the password! Bye Bye !");
         }
-
     }
 
     return 0;
