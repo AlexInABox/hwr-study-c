@@ -1,0 +1,1 @@
+#include <stdio.h>#include <stdlib.h>int main(){    void *mem = calloc(100, 1);    printf("%p\n", mem);    printf("%d\n", *((char*) mem));    printf("%p\n", mem + 1);    printf("%d\n", *((char*) (mem + 1)));    printf("%p\n", mem + 200);    printf("%d\n", *((char*) (mem + 200)));    return 0;}
