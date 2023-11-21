@@ -57,10 +57,21 @@ void pop(){
     free(top);
     top = temp;
 }
-int getWhole(int &returnMe[]){
+int get(int a){
     if (isEmpty())
         return 0;
 
+    struct node *temp = top;
+    for(int i = 0; i <= a; i++){
+        if (temp == NULL){
+            return -1;
+        }
+        else if (i == a){
+            return temp->data;
+        } else {
+            temp = temp->ptr;
+        }
+    }
 }
 int getSize(){
     if (isEmpty())
@@ -86,7 +97,6 @@ int getSize(){
 int main(){
     push(5);
     push(4);
-    printf("%d\n", getTop());
-    pop();
+    printf("%d\n", get(3));
     return 0;
 }
