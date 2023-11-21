@@ -97,6 +97,8 @@ int getSize(){
 int main(){
     push(5);
     push(4);
+    push(5);
+    push(1);
     printf("%d\n", get(3));
     return 0;
 }
