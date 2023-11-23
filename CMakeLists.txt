@@ -10,6 +10,7 @@ add_executable(E5T1 exercise_5/task_1.c)
 add_executable(E5T2 exercise_5/task_2.c)
 add_executable(E5T3 exercise_5/task_3.c)
 add_executable(E5T4 exercise_5/task_4.c)
+add_executable(E5T5 exercise_5/task_5.c)
 
 
 add_executable(inClass_pointer inClassStudies/pointer.c)
