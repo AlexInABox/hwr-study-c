@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h> //Device time
 
 struct node {
     int data;
@@ -95,10 +96,72 @@ int getSize(){
 
 
 int main(){
-    push(5);
-    push(4);
-    push(5);
-    push(1);
-    printf("%d\n", get(3));
+
+    printf("%s\n\n", "Hi welcome to my sorted stack <3");
+    printf("%s\n", "Press 1 to push().");
+    printf("%s\n", "Press 2 to pop().");
+    printf("%s\n", "Press 3 to getSize().");
+    printf("%s\n", "Press 4 to get() a specific index.");
+    printf("%s\n", "Press 5 to QUIT.");
+    printf("%s\n\n", "Press 6 to RANDOM PARTY.");
+
+    int userStaysInLoop = 1;
+    int userInputOption = 5;
+    int userInputValue = 0;
+
+    while (userStaysInLoop){
+
+        scanf("%d", &userInputOption);
+
+        switch (userInputOption) {
+
+            case 1:
+                printf("%s\n", "Value: ");
+                scanf("%d", &userInputValue);
+
+                push(userInputValue);
+
+                printf("%s%d\n", "Successfully pushed ", userInputValue);
+                break;
+            case 2:
+                pop();
+                printf("%s\n", "Popped >.<");
+                break;
+            case 3:
+                printf("%s%d\n", "Size of stack: ", getSize());
+                break;
+            case 4:
+                printf("%s\n", "Index: ");
+                scanf("%d", &userInputValue);
+
+                printf("%s%d%s%d\n", "get(", userInputValue, ") = ", get(userInputValue));
+                break;
+            case 5:
+                printf("%s\n", "Bye bye <3");
+                userStaysInLoop = 0;
+                break;
+            case 6:
+                printf("%s\n", "Currently filling the stack with 1000 random values.");
+
+                int randomNumber;
+                srand(time(NULL));
+                for (int i = 0; i < 1000; i++){
+                    randomNumber = rand() % 5000;
+
+                    push(randomNumber);
+                }
+
+                printf("[");
+                for (int i = 0; i < getSize(); i++){
+                    printf("%d%-1s", get(i), ", ");
+                }
+                printf("]");
+                break;
+            default:
+                userStaysInLoop = 0;
+                break;
+        }
+    }
+
     return 0;
 }
