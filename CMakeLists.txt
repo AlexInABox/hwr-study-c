@@ -28,6 +28,15 @@ add_executable(E5T3 exercise_5/task_3.c)
 add_executable(E5T4 exercise_5/task_4.c)
 add_executable(E5T5 exercise_5/task_5.c)
 
+#why did exercise 6 vanish?.. ;(
+
+add_executable(E7T1 exercise_7/task_1.c exercise_7/task_1_modules/palindrome.c)
+add_executable(E7T2 exercise_7/task_2.c exercise_7/task_2_modules/voidStack.c)
+#add_executable(E7T3 exercise_7/task_3.c)
+#add_executable(E7T4 exercise_7/task_4.c)
+#add_executable(E7T5 exercise_7/task_5.c)
+
+
 
 add_executable(inClass_pointer inClassStuff/pointer.c)
 add_executable(inClass_spaceallocation inClassStuff/spaceallocation.c)
