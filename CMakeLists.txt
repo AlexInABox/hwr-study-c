@@ -3,6 +3,8 @@ project(hwr_hello_world C)
 
 set(CMAKE_C_STANDARD 11)
 
+add_subdirectory(exercise_7/task_2_modules)
+
 add_executable(E2T1 exercise_2/task_1.c)
 add_executable(E2T2 exercise_2/task_2.c)
 add_executable(E2T3 exercise_2/task_3.c)
@@ -33,6 +35,10 @@ add_executable(E5T5 exercise_5/task_5.c)
 add_executable(E7T1 exercise_7/task_1.c exercise_7/task_1_modules/palindrome.c)
 add_executable(E7T2 exercise_7/task_2.c exercise_7/task_2_modules/voidStack.c)
 add_executable(E7T3 exercise_7/task_3.c exercise_7/task_3_modules/geometry.c)
+
+add_executable(E7T4 exercise_7/task_4.c)
+target_link_libraries(E7T4 PUBLIC List) # Fügt die Library zur Applikation hinzu.
+target_include_directories(E7T4 PUBLIC List) #Inkludiert die Headerdateien.
 #add_executable(E7T4 exercise_7/task_4.c)
 #add_executable(E7T5 exercise_7/task_5.c)
 
