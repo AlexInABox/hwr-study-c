@@ -32,7 +32,7 @@ add_executable(E5T5 exercise_5/task_5.c)
 
 add_executable(E7T1 exercise_7/task_1.c exercise_7/task_1_modules/palindrome.c)
 add_executable(E7T2 exercise_7/task_2.c exercise_7/task_2_modules/voidStack.c)
-#add_executable(E7T3 exercise_7/task_3.c)
+add_executable(E7T3 exercise_7/task_3.c exercise_7/task_3_modules/geometry.c)
 #add_executable(E7T4 exercise_7/task_4.c)
 #add_executable(E7T5 exercise_7/task_5.c)
 
