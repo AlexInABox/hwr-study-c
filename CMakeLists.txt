@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(hwr_hello_world C)
+project(hwr_study_c C)
 
 set(CMAKE_C_STANDARD 11)
 
