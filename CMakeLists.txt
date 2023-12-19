@@ -1,14 +1,52 @@
 cmake_minimum_required(VERSION 3.26)
-project(hwr_hello_world C)
+project(hwr_study_c C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(exercise_1 exercise.c)
-add_executable(exercise_2 exercise_2.c)
-add_executable(exercise_3 exercise_3.c)
-add_executable(inClass_pointer inClassStudies/pointer.c)
-add_executable(inClass_spaceallocation inClassStudies/spaceallocation.c)
-add_executable(inCall_queue inClassStudies/queue.c)
+add_subdirectory(exercise_7/task_2_modules)
+
+add_executable(E2T1 exercise_2/task_1.c)
+add_executable(E2T2 exercise_2/task_2.c)
+add_executable(E2T3 exercise_2/task_3.c)
+add_executable(E2T4 exercise_2/task_4.c)
+add_executable(E2T5 exercise_2/task_5.c)
+add_executable(E2T6 exercise_2/task_6.c)
+add_executable(E2T7 exercise_2/task_7.c)
+add_executable(E2T8 exercise_2/task_8.c)
+
+add_executable(E3T1 exercise_3/task_1.c)
+add_executable(E3T2 exercise_3/task_2.c)
+add_executable(E3T3 exercise_3/task_3.c)
+add_executable(E3T4 exercise_3/task_4.c)
+add_executable(E3T5 exercise_3/task_5.c)
+add_executable(E3T6 exercise_3/task_6.c)
+add_executable(E3T7 exercise_3/task_7.c)
+
+#where is exercise 4... :(
+
+add_executable(E5T1 exercise_5/task_1.c)
+add_executable(E5T2 exercise_5/task_2.c)
+add_executable(E5T3 exercise_5/task_3.c)
+add_executable(E5T4 exercise_5/task_4.c)
+add_executable(E5T5 exercise_5/task_5.c)
+
+#why did exercise 6 vanish?.. ;(
+
+add_executable(E7T1 exercise_7/task_1.c exercise_7/task_1_modules/palindrome.c)
+add_executable(E7T2 exercise_7/task_2.c exercise_7/task_2_modules/voidStack.c)
+add_executable(E7T3 exercise_7/task_3.c exercise_7/task_3_modules/geometry.c)
+
+add_executable(E7T4 exercise_7/task_4.c)
+target_link_libraries(E7T4 PUBLIC List) # Fügt die Library zur Applikation hinzu.
+target_include_directories(E7T4 PUBLIC List) #Inkludiert die Headerdateien.
+#add_executable(E7T4 exercise_7/task_4.c)
+#add_executable(E7T5 exercise_7/task_5.c)
+
+
+
+add_executable(inClass_pointer inClassStuff/pointer.c)
+add_executable(inClass_spaceallocation inClassStuff/spaceallocation.c)
+add_executable(inCall_queue inClassStuff/queue.c)
 
 
 
