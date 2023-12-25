@@ -70,5 +70,11 @@ target_link_libraries(E9T5 ${GTK4_LIBRARIES})
 add_executable(E9T6 exercise_9/task_6.c)
 target_link_libraries(E9T6 ${GTK4_LIBRARIES})
 
+add_executable(E9T7 exercise_9/task_7.c)
+target_link_libraries(E9T7 ${GTK4_LIBRARIES})
+
+add_executable(MOCK mock_exam/main.c)
+
+
 
 
