@@ -6,7 +6,7 @@
 
 int main() {
 
-    // Test Personen (fiktiv):
+    /* Test Personen (fiktiv):
     addPerson("Alex", "Mannheim", NULL, NULL);
     addPerson("Markus", "Rühl", NULL, NULL);
     addPerson("Theo", "Neumann", getPersonByIndex(0), getPersonByIndex(1));
@@ -17,7 +17,7 @@ int main() {
 
     addPerson("Klaus", "Becker", getPersonByIndex(2), getPersonByIndex(3));
     addPerson("Maria", "Schulz", getPersonByIndex(5), getPersonByIndex(6));
-
+    */
 
     printf("%s\n\n", "--- Biologischer Stammbaum ---");
 
