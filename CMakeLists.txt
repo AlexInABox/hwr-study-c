@@ -74,4 +74,4 @@ add_executable(E9T7 exercise_9/task_7.c)
 target_link_libraries(E9T7 ${GTK4_LIBRARIES})
 
 add_executable(MOCK_EXAM_ANCESTRY mock_exam/ancestry.c mock_exam/ancestry_modules/ancestry.c)
-#add_executable(MOCK mock_exam/classBook.c)
+add_executable(MOCK_EXAM_CLASSBOOK mock_exam/classBook.c mock_exam/classBook_modules/classBook.c)
