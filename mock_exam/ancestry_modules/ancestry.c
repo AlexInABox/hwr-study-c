@@ -12,7 +12,6 @@ void addPerson(char firstName[25], char surName[25], void *father, void *mother)
     struct person *temp = (struct person *) malloc(sizeof(struct person));
     strcpy(temp->firstName, firstName);
     strcpy(temp->surName, surName);
-    strcpy(temp->surName, surName);
 
     temp->father = father;
     temp->mother = mother;
