@@ -66,18 +66,12 @@ void *findPersonByName(char firstName[25], char surName[25]) {
 }
 
 void *getPersonByIndex(int index) {
-    if (top == NULL)
-        return NULL;
-
     struct person *temp = top;
-    for (int i = 0; i <= index; i++) {
-        if (temp == NULL) {
+    for (int i = 0; i < index; i++) {
+        if (temp == NULL)
             return NULL;
-        } else if (i == index) {
-            return temp;
-        } else {
-            temp = temp->next;
-        }
+
+        temp = temp->next;
     }
-    return NULL;
+    return temp;
 }
